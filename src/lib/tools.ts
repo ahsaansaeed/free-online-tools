@@ -4,6 +4,11 @@ import {
   QrCode,
   Type,
   ArrowRightLeft,
+  Maximize,
+  Code,
+  Palette,
+  Binary,
+  FileImage,
   LucideIcon,
 } from "lucide-react";
 
@@ -79,6 +84,66 @@ export const tools: Tool[] = [
     category: "Image",
     keywords: ["jpg to png", "png to jpg", "image converter", "webp converter"],
     color: "#a29bfe",
+  },
+  {
+    id: "image-resizer",
+    name: "Image Resizer",
+    description:
+      "Resize JPG, PNG, and WebP images to exact pixel dimensions or percentages. Perfect for social media banners, profile pictures, and websites.",
+    shortDescription: "Resize images to exact dimensions",
+    href: "/tools/image-resizer",
+    icon: Maximize,
+    category: "Image",
+    keywords: ["image resizer", "resize image online", "change image size"],
+    color: "#00b894",
+  },
+  {
+    id: "json-formatter",
+    name: "JSON Formatter",
+    description:
+      "Format, beautify, and validate your JSON data. Easy to read, syntax highlighted, and completely processed in your browser.",
+    shortDescription: "Format and validate JSON data",
+    href: "/tools/json-formatter",
+    icon: Code,
+    category: "Developer",
+    keywords: ["json formatter", "json beautifier", "validate json"],
+    color: "#0984e3",
+  },
+  {
+    id: "color-picker",
+    name: "Color Picker",
+    description:
+      "Extract colors from images or generate custom color palettes. Get exact HEX, RGB, and HSL values instantly.",
+    shortDescription: "Extract and generate color palettes",
+    href: "/tools/color-picker",
+    icon: Palette,
+    category: "Design",
+    keywords: ["color picker", "hex color", "color palette generator"],
+    color: "#ff7675",
+  },
+  {
+    id: "base64-encoder",
+    name: "Base64 Encoder/Decoder",
+    description:
+      "Easily encode text or files to Base64, or decode Base64 back to its original format. Developer-friendly and secure.",
+    shortDescription: "Encode & decode Base64 strings",
+    href: "/tools/base64-encoder",
+    icon: Binary,
+    category: "Developer",
+    keywords: ["base64 encoder", "base64 decoder", "base64 converter"],
+    color: "#636e72",
+  },
+  {
+    id: "pdf-to-image",
+    name: "PDF to Image",
+    description:
+      "Convert PDF pages into high-quality JPG or PNG images. Entirely client-side for maximum privacy and speed.",
+    shortDescription: "Convert PDF pages to JPG/PNG",
+    href: "/tools/pdf-to-image",
+    icon: FileImage,
+    category: "PDF",
+    keywords: ["pdf to image", "pdf to jpg", "pdf to png"],
+    color: "#d63031",
   },
 ];
 
