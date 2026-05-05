@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -58,6 +59,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1 relative z-10">{children}</main>
         <Footer />
+        <Analytics />
       </body>
       <GoogleAnalytics gaId="G-XYZ1234567" />
     </html>
