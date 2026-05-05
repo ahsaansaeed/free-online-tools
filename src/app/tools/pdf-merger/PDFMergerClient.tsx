@@ -101,7 +101,7 @@ export default function PDFMergerClient() {
       }
 
       const mergedBytes = await mergedPdf.save();
-      const blob = new Blob([mergedBytes], { type: "application/pdf" });
+      const blob = new Blob([mergedBytes as any], { type: "application/pdf" });
       const url = URL.createObjectURL(blob);
       setMergedUrl(url);
     } catch (err) {
