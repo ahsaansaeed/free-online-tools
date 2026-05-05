@@ -1,4 +1,4 @@
-import { notFound } from "next";
+import { notFound } from "next/navigation";
 import Link from "next/link";
 import { posts } from "@/lib/blog";
 import { ArrowLeft, Calendar, User, Clock } from "lucide-react";
