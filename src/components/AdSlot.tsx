@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 interface AdSlotProps {
   slotId: string;
   className?: string;
+  style?: React.CSSProperties;
   format?: "auto" | "fluid" | "rectangle";
   responsive?: "true" | "false";
 }
@@ -12,6 +13,7 @@ interface AdSlotProps {
 export default function AdSlot({
   slotId,
   className = "",
+  style,
   format = "auto",
   responsive = "true",
 }: AdSlotProps) {
@@ -30,7 +32,7 @@ export default function AdSlot({
   const isDev = process.env.NODE_ENV === "development";
 
   return (
-    <div className={`my-8 flex justify-center w-full ${className}`}>
+    <div className={`my-8 flex justify-center w-full ${className}`} style={style}>
       {isDev ? (
         <div className="bg-[var(--card)] border border-[var(--border)] border-dashed rounded-xl flex flex-col items-center justify-center w-full min-h-[120px] max-w-[728px] p-4 text-center opacity-70">
           <span className="text-[10px] uppercase tracking-wider text-[var(--muted-light)] mb-1 font-semibold">
