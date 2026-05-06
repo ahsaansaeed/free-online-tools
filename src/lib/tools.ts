@@ -9,6 +9,11 @@ import {
   Palette,
   Binary,
   FileImage,
+  FileQuestion,
+  FileCode,
+  Volume2,
+  Music,
+  ScanText,
   LucideIcon,
 } from "lucide-react";
 
@@ -144,6 +149,66 @@ export const tools: Tool[] = [
     category: "PDF",
     keywords: ["pdf to image", "pdf to jpg", "pdf to png"],
     color: "#d63031",
+  },
+  {
+    id: "lorem-ipsum",
+    name: "Lorem Ipsum Generator",
+    description:
+      "Generate placeholder text for your designs and layouts. Customize paragraphs, sentences, and words instantly.",
+    shortDescription: "Generate placeholder text for designs",
+    href: "/tools/lorem-ipsum",
+    icon: FileQuestion,
+    category: "Text",
+    keywords: ["lorem ipsum", "placeholder text", "text generator"],
+    color: "#fab1a0",
+  },
+  {
+    id: "markdown-to-html",
+    name: "Markdown to HTML",
+    description:
+      "Convert Markdown text into clean HTML code. Live preview and one-click copy for your web projects.",
+    shortDescription: "Convert Markdown into HTML code",
+    href: "/tools/markdown-to-html",
+    icon: FileCode,
+    category: "Developer",
+    keywords: ["markdown to html", "md to html", "markdown converter"],
+    color: "#e84393",
+  },
+  {
+    id: "text-to-speech",
+    name: "Text to Speech",
+    description:
+      "Convert written text into natural-sounding speech. Download as MP3 or listen instantly in your browser.",
+    shortDescription: "Convert written text into speech",
+    href: "/tools/text-to-speech",
+    icon: Volume2,
+    category: "Utility",
+    keywords: ["text to speech", "tts online", "convert text to audio"],
+    color: "#00b894",
+  },
+  {
+    id: "mp4-to-mp3",
+    name: "MP4 to MP3",
+    description:
+      "Extract audio from MP4 video files and save as MP3. Fast, free, and entirely processed in your browser.",
+    shortDescription: "Extract MP3 audio from MP4 videos",
+    href: "/tools/mp4-to-mp3",
+    icon: Music,
+    category: "Video",
+    keywords: ["mp4 to mp3", "extract audio", "video to mp3"],
+    color: "#6c5ce7",
+  },
+  {
+    id: "image-to-text",
+    name: "Image to Text (OCR)",
+    description:
+      "Extract text from images, photos, and scanned documents using OCR. Supports multiple languages and direct copying.",
+    shortDescription: "Extract text from images using OCR",
+    href: "/tools/image-to-text",
+    icon: ScanText,
+    category: "Image",
+    keywords: ["ocr online", "image to text", "extract text from image"],
+    color: "#fd79a8",
   },
 ];
 
