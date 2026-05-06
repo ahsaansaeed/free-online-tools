@@ -24,6 +24,9 @@ export const metadata: Metadata = {
       "Convert, compress, and create — 100% free, 100% private. Files never leave your browser.",
     type: "website",
   },
+  verification: {
+    google: "google8804a7e9b9b01edc",
+  },
 };
 
 export default function RootLayout({
